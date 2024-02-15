@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheat chatbot</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #c5deb6;
+            color: #333;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #60a020;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            color: #60a020;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #8cf226;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .response {
+            color: #60a020;
+            font-size: 40px;
+
+        }
+
+        .advice {
+            color: #2196F3;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🦠🌾 wheat chatbot</h1>
+
+    <!-- <form method="post" action="/">
+        <label>
+            <input type="text" name="user_input" placeholder="Enter your condition" required>
+        </label>
+        <br>
+        <button type="submit">Get Response</button>
+    </form> -->
+    <form method="post" action="/chatBot">
+        <label>
+            <input type="text" name="user_input" placeholder="Enter your condition" style="width: 400px;" required>
+        </label>
+        <br>
+        <button type="submit">Get Response</button>
+        
+        <hr>
+        <label>©️  Leverage AI in hydroponic farm</label>
+        
+        <a class="nav-link active" href="{{ url_for('index') }}">Return Home</a>
+        
+        <!-- <button href="{{ url_for('index') }}">Home</button> -->
+    </form>
+
+    <p class="response">{{ response }}</p>
+    <p>Advice to you :</p>
+    <p class="advice">{{ advice }}</p>
+</body>
+</html>

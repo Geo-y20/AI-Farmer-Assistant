@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>N & LW Lawn Care - Landscaping Bootstrap4 HTML5 Responsive Template </title>
+	<!-- Bootstrap core CSS -->
+	<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light top-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+		<img src="{{ url_for('static', filename='images/footer-logo.png') }}" alt="logo">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="{{ url_for('about') }}">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Pages
+                     </a>
+			   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+				<a class="dropdown-item" href="{{ url_for('index') }}">Chatbot</a>
+			   </div>
+                  </li>
+               </ul>
+            </div>
+        </div>
+    </nav>
+	<!-- full Title -->
+	<div class="full-title">
+		<div class="container">
+			<!-- Page Heading/Breadcrumbs -->
+			<h1 class="mt-4 mb-3">About
+				<small>small info</small>
+			</h1>
+		</div>
+	</div>
+    <!-- Page Content -->
+    <div class="container">
+		<div class="breadcrumb-main">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="{{ url_for('index') }}">Home</a>
+				</li>
+				<li class="breadcrumb-item active">About</li>
+			</ol>
+		</div>
+		<!-- About Content -->
+		<div class="about-main">
+			<div class="row">
+				<div class="col-lg-6">
+					<img class="img-fluid rounded mb-4" src="{{ url_for('static', filename='images/about-img.jpg') }}" alt="" />
+				</div>
+				<div class="col-lg-6">
+					<h2>About Modern Business</h2>
+					<p>Established with a commitment to agricultural innovation, our company pioneers the fusion of hydroponics and artificial intelligence.</p>
+					<p>Our mission is to redefine farming with sustainable, AI-driven solutions. </p>
+					<p>Guided by integrity, excellence, and sustainability, we aim to revolutionize global agriculture.</p>
+					<p>Our team comprises experts passionate about merging technology and agriculture, united in our vision to create a more sustainable and efficient future for farming practices.</p>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+
+		<!-- Team Members -->
+		<div class="team-members-box">  
+			<h2>Our Team</h2>
+			<div class="row">
+				<div class="col-lg-4 mb-4">
+				  <div class="card h-100 text-center">
+					<img class="card-img-top" src="{{ url_for('static', filename='images/mohamed.jpg') }}" alt="" />
+					<div class="card-body">
+						<h4 class="card-title">Mohamed Alaa</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Position</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+					</div>
+					<div class="card-footer">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						</ul>
+					</div>
+				  </div>
+				</div>
+				<div class="col-lg-4 mb-4">
+				  <div class="card h-100 text-center">
+					<img class="card-img-top" src="{{ url_for('static', filename='images/team_02.jpg') }}" alt="" />
+					<div class="card-body">
+						<h4 class="card-title">Mohamed Yasser</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Position</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+					</div>
+					<div class="card-footer">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						</ul>
+					</div>
+				  </div>
+				</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+
+    <!--footer starts from here-->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-sm-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+					<!--headin5_amrc-->
+					<p class="mb10">We are at the forefront of innovation, combining hydroponics and artificial intelligence to create cutting-edge solutions</p>
+					<p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+					<p><i class="fa fa-phone"></i> +201000456719 </p>
+					<p><i class="fa fa fa-envelope"></i> info@example.com </p>
+               </div>
+
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+					<!--headin5_amrc-->
+					<ul class="footer_ul_amrc">
+						<li><a href="#">Default Version</a></li>
+						<li><a href="#">Boxed Version</a></li>
+						<li><a href="#">Our Team </a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Our Services</a></li>
+						<li><a href="#">Get In Touch</a></li>
+					</ul>
+					<!--footer_ul_amrc ends here-->
+				</div>
+			</div>
+		</div>
+        <div class="container">
+            <div class="footer-logo">
+				<a href="#"><img src="images/footer-logo.png" alt="" /></a>
+			</div>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="copyright text-center">All Rights Reserved. &copy; 2023 <a href="#">Leverage AI in hydroponic farm</a>
+            </p>
+            <ul class="social_footer_ul">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+        </div>
+    </footer>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

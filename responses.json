@@ -1,0 +1,44 @@
+{
+  "keywords": {
+    "Crown root rot": {
+      "response_1": "Oh no, your crops are doing the root tango! Crown root rot is gate-crashing the party. Time to get those roots back on the dance floor!",
+      "response_2": "Roots feeling under the weather? Crown root rot may be playing the villain. It's time to be the superhero your crops need!",
+      "response_3": "Crown root rot knocking on your plant's door? Time to show it the exit! Your crops deserve a healthy, root-rocking life.",
+      "advice_1": "Root rehab time! Give your soil some breathing space, ensure proper drainage, and consider introducing beneficial fungi to out-dance the crown root rot.",
+      "advice_2": "Put on your root capes! Upgrade to well-draining soil, practice crop rotation, and treat your plants with a root-boosting tonic. Crown root rot won't stand a chance!",
+      "advice_3": "Root rebellion! Gift your plants the luxury of good soil aeration, adequate water management, and some TLC. Crown root rot will be history!"
+    },
+    "Healthy": {
+      "response_1": "Green thumbs up! Your crops are the VIPs of the garden party, thriving in a state of pure botanical bliss. Keep up the fantastic work!",
+      "response_2": "Your crops are like fitness gurus, flexing those green muscles! Healthy vibes all around  keep the garden gym pumping!",
+      "response_3": "Your garden is a thriving oasis of wellness! The envy of plant enthusiasts everywhere. Keep nurturing those happy, healthy vibes.",
+      "advice_1": "Keep the party going strong! Feed your plants a balanced diet, shower them with sunlight, and maintain a vigilant eye for any unwelcome pests.",
+      "advice_2": "Healthy habits pay off! Ensure proper watering, provide nutrient-rich soil, and create a pest-free environment to keep your plants in tip-top shape.",
+      "advice_3": "Spread the plant love! Mulch, compost, and companion planting  these are your secret weapons to maintain the wellness haven of your garden."
+    },
+    "Leaf rust": {
+      "response_1": "Uh-oh, rusty leaves? Not the kind of autumn you're aiming for! Leaf rust is sneaking into the garden time to kick it out!",
+      "response_2": "Rusty leaves? Say it ain't so! Leaf rust has overstayed its welcome. It's eviction time, and your garden is taking charge!",
+      "response_3": "Leaf rust trying to crash your foliage party? No worries, let's set some boundaries and reclaim your garden's leafy elegance!",
+      "advice_1": "Time for a leaf makeover! Prune affected leaves, improve air circulation, and consider applying organic fungicides to make rust history.",
+      "advice_2": "Show rust the exit! Keep your plants well-spaced, ensure proper watering in the morning, and introduce rust-resistant plant varieties to keep your garden vibrant.",
+      "advice_3": "Leafy lockdown! Prune affected branches, keep the garden clean, and embrace copper-based fungicides to ensure rust stays off the guest list."
+    },
+    "Loose smut": {
+      "response_1": "Uh-oh, your crops caught a case of the smuttiness. Loose smut , the uninvited party guest! Time to send it packing!",
+      "response_2": "Loose smut messing with your crop's mojo? It's time to reclaim your fields and show this intruder the exit!",
+      "response_3": "Smut intervention needed! Loose smut is gate-crashing your field fiesta. Let's restore order and protect your harvest dreams.",
+      "advice_1": "Smut showdown! Implement strict quarantine measures, invest in resistant varieties, and practice impeccable field hygiene to regain control.",
+      "advice_2": "Field fortress! Enhance your crop rotation strategy, opt for resistant seed varieties, and maintain a vigilant eye for potential carriers of loose smut.",
+      "advice_3": "Harvest heroes unite! Implement rigorous seed treatment, practice field sanitation, and consider consulting with agricultural experts to fortify your crops against loose smut."
+    }
+  },
+  "default": {
+    "response_1": "Sorry I cannot get you!!",
+    "response_2": "My apologies, I couldn't understand your request.", 
+    "response_3": "Oops! It seems I'm a bit confused here.",
+    "advice_1": "As an AI chatbot, my expertise lies in helping farmers with white diseases. Feel free to ask about those! - If it's not related to white diseases,I might not have the answers. Try asking about crop issues!",
+    "advice_2": "As an AI chatbot, my expertise lies in helping farmers with white diseases. Feel free to ask about those! - If it's not related to white diseases,I might not have the answers. Try asking about crop issues!",
+    "advice_3": "As an AI chatbot, my expertise lies in helping farmers with white diseases. Feel free to ask about those! - If it's not related to white diseases,I might not have the answers. Try asking about crop issues!"
+  }
+}

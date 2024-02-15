@@ -1,0 +1,7 @@
+numpy==1.25.2
+Flask==2.3.2
+keras==2.13.1
+opencv-contrib-python==4.7.0.68
+opencv-python==4.8.0.76
+opencv-python-headless==4.8.0.74
+fastjsonschema==2.16.3

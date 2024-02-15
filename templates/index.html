@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <title>Leverage AI in hydroponic farm</title>
+   <!-- Bootstrap core CSS -->
+   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+   <!-- Fontawesome CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
+   <!-- Custom styles for this template -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+   <!-- Navigation -->
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light top-nav fixed-top">
+      <div class="container">
+         <a class="navbar-brand" href="{{ url_for('index') }}" >
+            <img src="{{ url_for('static', filename='images/footer-logo.png') }}" alt="logo">
+         </a>
+         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link active" href="{{ url_for('index') }}">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('about') }}">About</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Pages
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                     <a class="dropdown-item" href="{{ url_for('chatBot') }}">Chatbot</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <header class="slider-main">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('{{ url_for('static', filename='images/slider-01.jpg') }}')">               <div class="carousel-caption d-none d-md-block">
+                  <h3>Welcome to Leverage AI in hydroponic farm</h3>
+                  <p>A Great Theme For Garden Lawn Care</p>
+               </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('{{ url_for('static', filename='images/slider-02.jpg') }}')">
+               <div class="carousel-caption d-none d-md-block">
+                  <h3>Innovation at its Core</h3>
+                  <p>We are at the forefront of innovation, combining hydroponics and artificial intelligence to create cutting-edge solutions</p>
+               </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image:url('{{ url_for('static', filename='images/slider-03.jpg') }}')">
+               <div class="carousel-caption d-none d-md-block">
+                  <h3>Sustainability Matters</h3>
+                  <p>Our commitment to sustainability guides every aspect of our work, ensuring that our practices have a positive impact on the environment.</p>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+         </a>
+      </div>
+   </header>
+   <!-- Page Content -->
+   <div class="container">
+      <div class="services-bar">
+         <h1 class="my-4">Our Best Services</h1>
+         <!-- Services Section -->
+         <div class="row">
+            <div class="col-lg-4 mb-4">
+               <div class="card h-100">
+                  <h4 class="card-header">AI Predictive Result and Analysis</h4>
+                  <div class="card-img">
+                     <img class="img-fluid" src="{{ url_for('static', filename='images/services-img-02.jpg') }}" alt="logo">
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text">Experience the future of farming with our AI-optimized hydroponic systems, ensuring precision and efficiency in nutrient delivery and crop health.</p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="{{ url_for('test') }}" class="btn btn-primary">Learn More</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+               <div class="card h-100">
+                  <h4 class="card-header">Web Camera Detection</h4>
+                  <div class="card-img">
+                     <img class="img-fluid" src="{{ url_for('static', filename='images/services-img-01.jpg') }}" alt="" />
+                  </div>
+                  <div class="card-body">
+                     <p class="card-text">Stay ahead with our predictive analytics tools that forecast crop performance, empowering you to make informed decisions for better yields.</p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="{{ url_for('streaming') }}" class="btn btn-primary">Learn More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- About Section -->
+      <div class="about-main">
+         <div class="row">
+            <div class="col-lg-6">
+               <h2>Welcome to Leverage AI in hydroponic farm</h2>
+               <p>We are at the forefront of innovation, combining hydroponics and artificial intelligence to create cutting-edge solutions.</p>
+               <h5>Sustainability Matters:</h5>
+               <ul>
+                  <li>Our commitment to sustainability guides every aspect of our work</li>
+                  <li>Ensuring that our practices have a positive impact on the environment.</li>
+                  <li>Our intelligent environmental controls adapt to the needs of your crops, creating the perfect conditions for growth through automated adjustments in lighting, temperature, and humidity.</li>
+                  <li>Our AI-powered systems are designed to optimize nutrient delivery, ensuring that your crops receive the right amount of nutrients at the right time.</li>
+               </ul>
+               <p>Monitor your farm in real-time with our automated systems, providing instant insights into sensor data. Stay connected with your crops 24/7, ensuring their well-being.</p>
+            </div>
+            <div class="col-lg-6">
+               <img class="img-fluid rounded" src="{{ url_for('static', filename='images/about-img.jpg') }}" alt="" />
+            </div>
+         </div>
+         <!-- /.row -->
+      </div>
+      <hr>
+   </div>
+   <!-- /.container -->
+   <!--footer starts from here-->
+   <footer class="footer">
+      <div class="container bottom_border">
+         <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+               <!--headin5_amrc-->
+               <p class="mb10">We are at the forefront of innovation, combining hydroponics and artificial intelligence to create cutting-edge solutions</p>
+               <p><i class="fa fa-location-arrow"></i> Cairo Egypt </p>
+               <p><i class="fa fa-phone"></i> +010005641099 </p>
+               <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col">
+               <!--footer_ul2_amrc ends here-->
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+               <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+               <!--headin5_amrc-->
+               <ul class="footer_ul_amrc">
+                  <li><a href="{{ url_for('index') }}">Default Version</a></li>
+                  <li><a href="{{ url_for('about') }}">Our Team</a></li>
+                  <li><a href="{{ url_for('about') }}">About Us</a></li>
+                  <li><a href="{{ url_for('about') }}">Our Services</a></li>
+               </ul>
+               <!--footer_ul_amrc ends here-->
+            </div>
+         </div>
+         <div class="container">
+            <div class="footer-logo">
+               <a href="#"><img src="images/footer-logo.png" alt="" /></a>
+            </div>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="copyright text-center">All Rights Reserved. &copy; 2023
+               <a href="#">N & LW Lawn Care</a> Design By :
+               <a href="https://html.design/">html design</a>
+            </p>
+            <ul class="social_footer_ul">
+               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+         </div>
+      </div>
+   </footer>
+
+   <!-- Bootstrap core JavaScript -->
+   <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheat Disease Detection</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #5ec549;
+            border-color: #5ec549;
+        }
+
+        #videoFeed {
+            border: 2px solid #333;
+            margin-top: 10px;
+        }
+
+        #homeButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #5ec549;
+            border-color: #5ec549;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="{{ url_for('index') }}" id="homeButton">Home Page</a>
+    <h1>Web Camera Detection</h1>
+    <button id="startStream">Start Stream</button>
+    <button id="stopStream" style="display: none;">Stop Stream</button>
+    <br>
+    <img id="videoFeed" src="#" width="640" height="480">
+
+    <script>
+        $(document).ready(function () {
+            var video = document.getElementById("videoFeed");
+            var startButton = document.getElementById("startStream");
+            var stopButton = document.getElementById("stopStream");
+
+            startButton.onclick = function () {
+                startButton.style.display = "none";
+                stopButton.style.display = "inline";
+                video.src = "/video_feed";
+            };
+
+            stopButton.onclick = function () {
+                startButton.style.display = "inline";
+                stopButton.style.display = "none";
+                video.src = "#";
+            };
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leverage AI in Hydroponic Farm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, p {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        span {
+            font-weight: bold;
+            color: #666;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .output {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .output-yes {
+            color: green;
+        }
+
+        .output-no {
+            color: red;
+        }
+
+        #not-recommended-info {
+            display: none;
+            color: red;
+        }
+
+        #not-recommended-info p {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Leverage AI in Hydroponic Farm</h1>
+        <p>Welcome to our AI system</p>
+
+        <!-- Display sensor values -->
+        <label for="temp">Temperature:</label>
+        <span id="temp">{{ sensor_data['temp'] }} C</span><br>
+        <label for="hum">Humidity:</label>
+        <span id="hum">{{ sensor_data['hum'] }}%</span><br>
+        <label for="light">Light:</label>
+        <span id="light">{% if sensor_data['light'] %}On{% else %}Off{% endif %}</span><br>
+        <label for="water">Water Level:</label>
+        <span id="water">{{ sensor_data['water'] }}</span><br>
+        <label for="ph">PH:</label>
+        <span id="ph">6.1</span><br>
+
+        <!-- Prediction button -->
+        <button id="predict-button">Predict</button>
+
+        <!-- Output display -->
+        <div id="output" class="output"></div>
+
+        <!-- Additional information for not recommended -->
+        <div id="not-recommended-info">
+            <p>Not recommended for planting. Recommended planting conditions are:</p>
+            <ul>
+                <li>Humidity: 50%</li>
+                <li>Temperature: 24 C</li>
+                <li>PH: 6.1</li>
+                <li>Light: On</li>
+                <li>Water Level: Normal</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("predict-button").addEventListener("click", function () {
+            // Fetch real-time sensor data from the /predict endpoint
+            fetch("/predict", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({})
+            })
+            .then(response => response.json())
+            .then(predictionData => {
+                var outputElement = document.getElementById("output");
+                var notRecommendedInfo = document.getElementById("not-recommended-info");
+
+                if (predictionData.output.includes("Not recommended")) {
+                    // Display additional information for not recommended
+                    notRecommendedInfo.style.display = "block";
+                } else {
+                    // Hide additional information for recommended
+                    notRecommendedInfo.style.display = "none";
+                }
+
+                // Update the output with the prediction message
+                outputElement.innerHTML = predictionData.output;
+                outputElement.style.color = predictionData.output.includes("Recommended") ? "green" : "red";
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        });
+    </script>
+</body>
+</html>
