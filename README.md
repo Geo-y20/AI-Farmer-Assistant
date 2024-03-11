@@ -61,4 +61,7 @@ Visit [http://localhost:5000](http://localhost:5000) in your web browser to expe
 - Abdallah Alkhouly- a.alkholy53@student.aast.edu
 
 ## Sample of Web Page 
+<img src= 'https://github.com/Geo-y20/Leverage-AI-in-hydroponic-farm/blob/9c85f7a5d661c2bbefddd61127da0482c2659c17/Sample%20Web%20Paage/sample1.JPG'>
+<img src= 'https://github.com/Geo-y20/Leverage-AI-in-hydroponic-farm/blob/9c85f7a5d661c2bbefddd61127da0482c2659c17/Sample%20Web%20Paage/sample2.JPG'>
+<img src= 'https://github.com/Geo-y20/Leverage-AI-in-hydroponic-farm/blob/9c85f7a5d661c2bbefddd61127da0482c2659c17/Sample%20Web%20Paage/sample3.JPG'>
 
